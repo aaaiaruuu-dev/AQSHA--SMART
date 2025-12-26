@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>AQSHA SMART</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Айлық табысты енгіз</h2>
+<input type="number" id="income" placeholder="Айлық табыс (₸)">
+<button onclick="saveIncome()">Сақтау</button>
+
+<p id="dailyLimit"></p>
+
+<hr>
+
+<h3>📊 50 / 30 / 20 жоспары</h3>
+
+<div class="box">
+  <h4>🏠 Міндетті шығын (50%)</h4>
+  <p id="needTotal"></p>
+  <p id="needSpent"></p>
+  <p id="needLeft"></p>
+</div>
+
+<div class="box">
+  <h4>🎉 Қалау шығын (30%)</h4>
+  <p id="wantTotal"></p>
+  <p id="wantSpent"></p>
+  <p id="wantLeft"></p>
+</div>
+
+<div class="box">
+  <h4>💰 Жинақ (20%)</h4>
+  <p id="saveTotal"></p>
+  <p id="saveCurrent"></p>
+</div>
+
+<hr>
+
+<h3>➕ Шығын қосу</h3>
+
+<select id="category">
+  <option value="need">🏠 Міндетті (тамақ, су, жол)</option>
+  <option value="want">🎉 Қалау (кафе, кино)</option>
+  <option value="save">💰 Жинақ</option>
+</select>
+
+<input type="number" id="amount" placeholder="Сома (₸)">
+<button onclick="addExpense()">Қосу</button>
+
+<p id="total">Жалпы шығын: 0 ₸</p>
+
+<button onclick="resetAll()">🔄 Барлығын тазалау</button>
+
+<script src="script.js"></script>
+</body>
+</html>
